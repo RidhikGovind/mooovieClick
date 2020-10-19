@@ -1,11 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import "./styles.css";
+import SearchBar from './SearchBar'
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      
-    </div>
-  );
+export default class App extends Component {
+  // apiKey = "629ce996eae4f5cce613adf9c55a514a"
+
+  render() {
+    return(
+      <div>
+        <SearchBar />
+       
+        
+      </div>
+      ) 
+
+  }
 }
