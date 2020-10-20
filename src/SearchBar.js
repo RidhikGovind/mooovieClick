@@ -56,8 +56,10 @@ export default function SearchBar() {
                 />
               </div>
 
+              <h2 class="language">{movie.original_language}</h2>
+
               <div className="card_content">
-                {/* <h2 class="language">{movie.original_language}</h2> */}
+                
                 <h3 className="card_title">{movie.title}</h3>
                 <h4 className="card_details">{movie.overview}</h4>
               

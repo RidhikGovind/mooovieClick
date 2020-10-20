@@ -68,6 +68,7 @@ body {
   background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
   transition: 0.5s ease all;
   cursor: pointer;
+  position: relative;
 }
 
 .movieCard:hover {
@@ -86,11 +87,24 @@ body {
   margin: 1rem;
 }
 
-.circle_content{
-display: flex;
-justify-content: space-around;
+
+.language {
+  text-transform: uppercase;
+  position: absolute;
+  top: 10px;
+right: 10px;
+background-color: grey;
+color: rgb(255, 255, 255);
+padding: 0.3rem;
+border-radius: 10px;
 }
-.circle{
+
+.circle_content {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.circle {
   width: 80px;
   height: 80px;
   padding: 1rem;
@@ -101,76 +115,71 @@ justify-content: space-around;
   border-radius: 50%;
   position: relative;
   background-color: #fc5296;
-background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
-  
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
 }
 
-.circle h4{
+.circle h4 {
   position: absolute;
   bottom: -2.4rem;
- 
   left: 0;
 }
 
-.circle:before{
-  content: '';
+.circle:before {
+  content: "";
   position: absolute;
   width: 80%;
   height: 80%;
   background-color: #0cbaba;
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-  
-top: 8px;
-left: 8px;
-transform: translate(-50,-50%);
-border-radius: 50%;
+  top: 8px;
+  left: 8px;
+  transform: translate(-50, -50%);
+  border-radius: 50%;
 }
 
-.popularity h4{
+.popularity h4 {
   position: absolute;
-bottom: -1.7rem;
+  bottom: -1.7rem;
 }
 
-.circle h3{
+.circle h3 {
   z-index: 10;
   color: white;
   position: absolute;
-  transform: translate( 50%, 50%);
+  transform: translate(50%, 50%);
 }
 
-@media(min-width: 520px) {
-  input{
-width: 50%;
+@media (min-width: 520px) {
+  input {
+    width: 50%;
   }
 
-  .searchBtn{
-      width: 50%;
+  .searchBtn {
+    width: 50%;
   }
 
-  .form{
+  .form {
     display: flex;
-flex-direction: column;
-align-items: center
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-
-@media(min-width: 720px) {
-  input{
-width: 30%;
+@media (min-width: 720px) {
+  input {
+    width: 30%;
   }
 
-  .searchBtn{
-      width: 30%;
+  .searchBtn {
+    width: 30%;
   }
 
-  .form{
+  .form {
     display: flex;
-flex-direction: column;
-align-items: center
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media(max-width: 320px) {
-
-}
+/* @media (max-width: 320px) {
+} */
