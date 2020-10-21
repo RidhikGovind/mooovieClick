@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {API_KEY} from './api'
 
 export default function SearchBar() {
   //creating a query state, with its function and setting a default value of ''
@@ -8,9 +9,9 @@ export default function SearchBar() {
 
   const searchMovies = async (e) => {
     e.preventDefault();
-    const api_key = "629ce996eae4f5cce613adf9c55a514a";
+    // const api_key = "629ce996eae4f5cce613adf9c55a514a";
 
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&page=1*include_adult="false"&query=${query}`;
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&page=1*include_adult="false"&query=${query}`;
 
     try {
       const res = await fetch(url);

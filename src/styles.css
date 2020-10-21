@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -7,16 +6,13 @@
   box-sizing: border-box;
   font-family: ubuntu;
 }
-html{
-  height: 100000000vh;
-}
 
 body {
   background-color: #537895;
   background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
   background-repeat: none;
-  background-size: contain;
-  height: 100000000vh;
+
+  height: 100vh;
   color: #fff;
 }
 
@@ -25,11 +21,9 @@ body {
   text-align: center;
 }
 
-
 .searchBar {
   text-align: center;
   padding: 1.5rem;
-  
 }
 
 .form {
@@ -51,7 +45,7 @@ body {
 .searchBtn {
   background-color: #20bf55;
   background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
-
+  font-size: 1.3rem;
   background-repeat: none;
   color: white;
   border: none;
@@ -96,22 +90,20 @@ body {
   margin: 1rem;
 }
 
-
 .language {
   text-transform: uppercase;
   position: absolute;
   top: 10px;
-right: 10px;
-background-color: grey;
-color: rgb(255, 255, 255);
-padding: 0.3rem;
-border-radius: 10px;
+  right: 10px;
+  background-color: grey;
+  color: rgb(255, 255, 255);
+  padding: 0.3rem;
+  border-radius: 10px;
 }
 
 .circle_content {
   display: flex;
   justify-content: space-around;
-  
 }
 .circle {
   width: 80px;
@@ -189,13 +181,11 @@ border-radius: 10px;
     align-items: center;
   }
 
-  .movieList{
+  .movieList {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,2fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
     grid-template-rows: auto;
-
-}
-
+  }
 }
 
 @media (min-width: 1080px) {
@@ -205,6 +195,4 @@ border-radius: 10px;
     grid-template-rows: auto;
 
 } */
-
-  
 }
