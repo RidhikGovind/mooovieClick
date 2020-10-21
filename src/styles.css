@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.App {
-  font-family: sans-serif;
-  text-align: center;
+html{
+  height: 100000000vh;
 }
+
 body {
   background-color: #537895;
   background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
@@ -16,6 +15,12 @@ body {
   height: 100000000vh;
   color: #fff;
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
 
 .searchBar {
   text-align: center;
